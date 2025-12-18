@@ -372,8 +372,8 @@ export default function KeywordCrossword() {
                 className="grid gap-y-1.5 gap-x-0.5 p-2 sm:p-4 bg-slate-100 rounded-xl shadow-inner"
                 style={{
                     gridTemplateColumns: window.innerWidth < 640 
-                        ? `repeat(${totalCols}, minmax(28px, 32px))` 
-                        : `repeat(${totalCols}, minmax(32px, 40px))`, 
+                        ? `repeat(${totalCols}, minmax(18px, 25px))` 
+                        : `repeat(${totalCols}, minmax(25px, 32px))`, 
                 }}
                 ref={containerRef}
             >
