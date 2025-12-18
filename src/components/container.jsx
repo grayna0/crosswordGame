@@ -391,7 +391,7 @@ export default function KeywordCrossword() {
                                     <>
                                         {/* Row Number (Chỉ hiện ở ô đầu tiên của mỗi hàng) */}
                                         {cIndex === (pivotCol - CROSSWORD_DATA[rIndex].keyIndex) && (
-                                            <div className="absolute -left-5 sm:-left-6 md:-left-8 top-1/2 -translate-y-1/2 w-5 sm:w-6 text-right">
+                                            <div className="absolute -left-5 sm:-left-6 md:-left-8 top-1/2 -translate-y-1/2 w-5 sm:w-6 text-right top-0">
                                                 <span className="text-[10px] sm:text-xs md:text-sm font-bold text-slate-400 bg-slate-100 px-1 sm:px-1.5 py-0.5 rounded-md">
                                                     {rIndex + 1}
                                                 </span>
