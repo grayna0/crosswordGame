@@ -349,7 +349,7 @@ export default function KeywordCrossword() {
       </header>
 
       {/* MAIN CONTENT */}
-      <main className="flex-1 max-w-5xl mx-auto w-full p-4 flex flex-col items-center">
+      <main className="flex-1 max-w-5xl mx-auto w-full  flex flex-col items-center">
         
         {/* CURRENT QUESTION BOX */}
         <div className="w-full max-w-3xl bg-white border-l-4 border-amber-500 p-5 mb-8 rounded-r-xl shadow-sm animate-in slide-in-from-top-4 duration-500">
@@ -367,7 +367,7 @@ export default function KeywordCrossword() {
         </div>
 
         {/* GAME AREA */}
-        <div className="relative w-full overflow-x-auto pb-8 flex justify-center px-2">
+        <div className="relative w-full overflow-x-auto pb-8 flex justify-center ">
             <div 
                 className="grid gap-y-1.5 gap-x-0.5 p-2 sm:p-4 bg-slate-100 rounded-xl shadow-inner"
                 style={{
