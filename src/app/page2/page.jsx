@@ -499,39 +499,42 @@ export default function Page2() {
             </button>
         </div>
 
-        {showPrankButton && (
-                   <button 
-                       onClick={handlePrankClick}
-                       className="btntroll mt-6 px-8 py-3 bg-gradient-to-r from-green-400 to-emerald-600 text-white font-bold text-lg rounded-full shadow-xl animate-bounce hover:scale-110 transition-transform border-4 border-white ring-4 ring-green-200"
-                   >
-                       
-                       Nhấn vào để nhận một món quà từ nhà thiết kế ! =)))))
-                   </button>
-               )}
        
              </main>
              
-             {/* PRANK SUCCESS MODAL */}
-             {showPrankModal && (
-                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4 animate-in fade-in zoom-in duration-300">
-                     <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-sm w-full text-center relative overflow-hidden">
-                         <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-amber-400 via-yellow-500 to-orange-500"></div>
-                         
-                         <div className="w-20 h-20 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner ring-4 ring-white">
-                             <Trophy size={40} strokeWidth={2} />
-                         </div>
-                         
-                         <h2 className="text-2xl font-bold text-slate-800 mb-1">Úi Ai đây nè =))))</h2>
-                         <button className="btntoll text-slate-500 text-sm mb-6" onClick={setTroll(true)}>{`Phần quà của bạn là ${troll ? "một lượt chơi lại miễn phí <3 " : "Ơ..." <3}`}</button>
-                         
-                         <button 
-                           onClick={handlePrankConfirm}
-                           className="w-full py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl transition-all shadow-lg active:scale-95 flex items-center justify-center gap-2"
-                         >
-                             <RotateCcw size={18} /> Nhận quà nè !
-                         </button>
-                     </div>
-                 </div>
+      
+
+      {/* SUCCESS MODAL */}
+      {isSolved && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4 animate-in fade-in zoom-in duration-300">
+              <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-sm w-full text-center relative overflow-hidden">
+                  <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-amber-400 via-yellow-500 to-orange-500"></div>
+                  
+                  <div className="w-20 h-20 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner ring-4 ring-white">
+                      <Trophy size={40} strokeWidth={2} />
+                  </div>
+                  
+                  <h2 className="text-2xl font-bold text-slate-800 mb-1">Xuất sắc!</h2>
+                  <p className="text-slate-500 text-sm mb-6">Bạn đã mở khóa từ bí ẩn</p>
+                  
+                  <div className="bg-slate-50 border border-slate-100 rounded-xl p-4 mb-6">
+                       <span className="block text-xs text-slate-400 uppercase tracking-widest mb-1">Từ khóa</span>
+                       <span className="block text-3xl font-black text-amber-500 tracking-[0.2em]">{KEYWORD}</span>
+                  </div>
+
+                  <div className="flex justify-between text-sm mb-6 px-2">
+                       <span className="text-slate-500">Thời gian:</span>
+                       <span className="font-bold text-slate-800">{formatTime(elapsedTime)}</span>
+                  </div>
+
+                  <button 
+                    onClick={resetGame}
+                    className="w-full py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl transition-all shadow-lg active:scale-95 flex items-center justify-center gap-2"
+                  >
+                      <RotateCcw size={18} /> Chơi lại
+                  </button>
+              </div>
+          </div>
       )}
     </div>
   );
