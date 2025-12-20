@@ -21,13 +21,32 @@ code {
   width: 6px;
   height: 6px;
 }
+
 .custom-scrollbar::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.05);
 }
+
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(148, 163, 184, 0.5); /* slate-400/50 */
+  background: rgba(148, 163, 184, 0.5);
+  /* slate-400/50 */
   border-radius: 10px;
 }
+
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: rgba(148, 163, 184, 0.8);
+}
+
+input {
+  font-weight: 700 !important;
+
+}
+
+h1 {
+  margin: 0 !important
+}
+
+.btntroll {
+  width: 400px !important;
+  background-color: rgb(104, 109, 109) !important;
+  color: rgb(247, 244, 244);
 }
