@@ -9,7 +9,7 @@ export const CROSSWORD_DATA = [
     {
         default: [],
         id: 2,
-        question: "Sai thì nhận, đúng thì cãi, không vòng vo?",
+        question: "Câu 2: Không né tránh lỗi lầm, không vòng vo khi nói chuyện là gì?",
         answer: "HONESTY",
         keyIndex: 1, // O
     },
@@ -44,7 +44,7 @@ export const CROSSWORD_DATA = [
     {
         default: [],
         id: 7,
-        question: "Một trong các yếu tố để đánh giá perfomance?", // Updated question to make more sense if needed, or keep original placeholders
+        question: "Sếp vui, team khỏe là do cái gì nhỉ?",
         answer: "PRODUCTIVITY",
         keyIndex: 1, // R
     },
@@ -82,21 +82,21 @@ export const CROSSWORD_DATA_2 = [
     {
         default: [],
         id: 5,
-        question: 'Câu 5: 3 anh vác gậy đuổi nhau, 12 cô gái làm ngơ đứng nhìn là cái gì?',
+        question: 'Câu 5: 3 anh vác gậy đuổi nhau, 12 cô gái làm ngơ đứng nhìn là cái gì?																			',
         answer: "DONGHO",
         keyIndex: 4, // H (D-O-N-G-[H]-O)
     },
     {
         default: [],
         id: 6,
-        question: 'Câu 6: Đã nhận việc là .... làm cho tới cùng?',
+        question: 'Câu 6: Đã nhận việc là .... làm cho tới cùng?																			',
         answer: "CAMKET",
         keyIndex: 5, // T (C-A-M-K-E-[T])
     },
     {
         default: [],
         id: 7,
-        question: 'Câu 7: Không có cái này là không có làm được gì, chỉ có thể kêu: "ủa sao không vào được"?',
+        question: 'Câu 7: Không có cái này là không có làm được gì, chỉ có thể kêu: "ủa sao không vào được"?																			',
         answer: "INTERNET",
         keyIndex: 4, // R (I-N-T-E-[R]-N-E-T)
     },
@@ -110,7 +110,7 @@ export const CROSSWORD_DATA_2 = [
     {
         default: [],
         id: 9,
-        question: 'Câu 9: Job khó hành hạ hơn người yêu cũ nhưng bạn vẫn đến công ty để làm, gọi là gì?',
+        question: 'Câu 9: Job khó hành hạ hơn người yêu cũ nhưng bạn vẫn đến công ty để làm, gọi là gì?																			',
         answer: "TRACHNHIEM",
         keyIndex: 3, // C (T-R-A-[C]-H-N-H-I-E-M)
     },
@@ -122,14 +122,14 @@ export const CROSSWORD_DATA_3 = [
     {
         id: 1,
         default: [],
-        question: "Làm xong job, khách 'gật đầu' hoặc 'lắc đầu' là do đâu?",
+        question: `Câu 1: Làm xong job, khách "gật đầu" hoặc "lắc đầu" là do đâu?`,
         answer: "CHATLUONG",
         keyIndex: 3, // T (C-H-A-[T]-L-U-O-N-G)
     },
     {
         id: 2,
         default: [],
-        question: "Cái gì mà lu bu một hồi sẽ thành 'Tao work'?",
+        question: `Câu 2: Cái gì mà lu bu một hồi sẽ thành "Tao work"?																			`,
         answer: "TEAMWORK",
         keyIndex: 6, // R (T-E-A-M-W-O-[R]-K)
     },
@@ -137,56 +137,56 @@ export const CROSSWORD_DATA_3 = [
         id: 3,
         default: [6, "A"],
 
-        question: "Cái gì không thể nhìn thấy nhưng ai cũng biết nó đang đến?",
+        question: `Câu 3: Cái gì không thể nhìn thấy nhưng ai cũng biết nó đang đến?																			`,
         answer: "TUONGLAI",
         keyIndex: 6, // A (T-U-O-N-G-L-[A]-I)
     },
     {
         default: [],
         id: 4,
-        question: "Khiến bạn ăn tối ở công ty thay vì được về nhà?",
+        question: `Câu 4: Khiến bạn ăn tối ở công ty thay vì được về nhà?`,
         answer: "TANGCA",
         keyIndex: 4, // C (T-A-N-G-[C]-A)
     },
     {
         default: [],
         id: 5,
-        question: "Việc đầu tiên ai cũng làm mỗi khi tới Công ty là gì?",
+        question: `Câu 5: Việc đầu tiên ai cũng làm mỗi khi tới Công ty là gì?																			`,
         answer: "CHAMCONG",
         keyIndex: 1, // H (C-[H]-A-M-C-O-N-G)
     },
     {
         default: [5, "H"],
         id: 6,
-        question: "Không màu mè, không giả trân là gì?",
+        question: `Câu 6: Không màu mè, không giả trân là gì?																			`,
         answer: "CHANTHAT",
         keyIndex: 3, // N (C-H-A-[N]-T-H-A-T)
     },
     {
         default: [],
         id: 7,
-        question: "Dân nơi công sở?", // Ảnh gốc ghi là "Rấn", đã sửa lại cho hợp lý
+        question: "Câu 7: Rắn nơi công sở?																			", // Ảnh gốc ghi là "Rấn", đã sửa lại cho hợp lý
         answer: "DONGNHIEP", // GIỮ NGUYÊN THEO ẢNH (Thiếu chữ G) để khớp chữ H ở index 5
         keyIndex: 5, // H (D-O-N-G-N-[H]-I-E-P)
     },
     {
         default: [],
         id: 8,
-        question: "Đi đúng hướng, làm đúng việc, không sai đường là nhờ gì nhỉ?",
+        question: "Câu 8: Đi đúng hướng, làm đúng việc, không sai đường là nhờ gì nhỉ?																			",
         answer: "MUCTIEU",
         keyIndex: 4, // I (M-U-C-T-[I]-E-U)
     },
     {
         default: [],
         id: 9,
-        question: "Cái này lên thì sếp vui, mình vui, đội nhóm vui?",
+        question: "Câu 9: Cái này lên thì sếp vui, mình vui, đội nhóm vui? 																			",
         answer: "HIEUSUAT",
         keyIndex: 2, // E (H-I-[E]-U-S-U-A-T)
     },
     {
         default: [4, "M"],
         id: 10,
-        question: "Cái gì đã giao mà càng để lâu càng bị sếp nhắc?",
+        question: "Câu 10: Cái gì đã giao mà càng để lâu càng bị sếp nhắc?																			",
         answer: "NHIEMVU",
         keyIndex: 4, // M (N-H-I-E-[M]-V-U)
     }
