@@ -166,7 +166,7 @@ export const CROSSWORD_DATA_3 = [
         default: [],
         id: 7,
         question: "Câu 7: Rắn nơi công sở?																			", // Ảnh gốc ghi là "Rấn", đã sửa lại cho hợp lý
-        answer: "DONGNHIEP", // GIỮ NGUYÊN THEO ẢNH (Thiếu chữ G) để khớp chữ H ở index 5
+        answer: "DONGNGHIEP", // GIỮ NGUYÊN THEO ẢNH (Thiếu chữ G) để khớp chữ H ở index 5
         keyIndex: 5, // H (D-O-N-G-N-[H]-I-E-P)
     },
     {
